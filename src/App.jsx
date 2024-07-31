@@ -170,7 +170,7 @@ function Projects() {
       <h1 className='text-3xl my-6'>Projects</h1>
       <div className='flex flex-col lg:flex-row '>
         <ProjectDisplay image={album_site} description={'A site where users can rate, review, and maintain a collection of albums.'} link={'https://github.com/Clester31/album-review-site'} />
-        <ProjectDisplay image={crate_site} description={'A loot box opening simulator based off Team Fortress 2.'} link={'https://github.com/Clester31/album-review-site'} />
+        <ProjectDisplay image={crate_site} description={'A loot box opening simulator based off of the Team Fortress 2 crate unboxing mechanics.'} link={'https://github.com/Clester31/tf2-unboxing-simulator'} />
         <ProjectDisplay image={color_site} description={'A simple color gradient generator that creates a seamless transition.'} link={'https://github.com/Clester31/Color-Gradient-Generator'} />
       </div>
     </div>
