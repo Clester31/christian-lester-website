@@ -17,6 +17,8 @@ import python_logo from './assets/tool_images/python.png';
 import react_logo from './assets/tool_images/react.png';
 import tailwind_logo from './assets/tool_images/tailwind.png';
 import mongo_logo from './assets/tool_images/mongo.png';
+import ts_logo from './assets/tool_images/ts.png'
+import njs_logo from './assets/tool_images/njs.png'
 
 import album_site from './assets/project_images/album-site.png'
 import crate_site from './assets/project_images/crate-site.png'
@@ -148,12 +150,12 @@ function AboutMe() {
 }
 
 function Tools() {
-  const [langIcons, setLangIcons] = useState([c_logo, cpp_logo, java_logo, python_logo, html_logo, css_logo, js_logo, react_logo, tailwind_logo, mongo_logo]);
+  const [langIcons, setLangIcons] = useState([c_logo, cpp_logo, java_logo, python_logo, html_logo, css_logo, js_logo, react_logo, tailwind_logo, mongo_logo, ts_logo, njs_logo]);
 
   return (
     <div className='about-me flex flex-col items-center w-3/5 justify-center m-auto rounded-xl p-2 mt-10'>
       <h1 className='text-3xl my-6'>Languages/Tools</h1>
-      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 flex mb-6'>
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 flex mb-6'>
         {langIcons.map((item, idx) => (
           <button key={idx} className='aero tool-icon p-2'>
             <img src={item} alt="" className='w-12' />
@@ -170,7 +172,7 @@ function Projects() {
       <h1 className='text-3xl my-6'>Projects</h1>
       <div className='flex flex-col lg:flex-row '>
         <ProjectDisplay image={album_site} description={'A site where users can rate, review, and maintain a collection of albums.'} link={'https://github.com/Clester31/album-review-site'} />
-        <ProjectDisplay image={crate_site} description={'A loot box opening simulator based off of the Team Fortress 2 crate unboxing mechanics.'} link={'https://github.com/Clester31/tf2-unboxing-simulator'} />
+        <ProjectDisplay image={crate_site} description={'A loot box opening simulator based off of Team Fortress 2.'} link={'https://github.com/Clester31/tf2-unboxing-simulator'} />
         <ProjectDisplay image={color_site} description={'A simple color gradient generator that creates a seamless transition.'} link={'https://github.com/Clester31/Color-Gradient-Generator'} />
       </div>
     </div>
